@@ -1,0 +1,10 @@
+
+<div class="form"><%= form_with model: @task do |t| %>
+  <%= t.label :title %>
+  <%= t.text_field :title %>
+  <%= t.label :details %>
+  <%= t.text_field :details %>
+  <%= t.radio_button :completed, "completed"%>
+  <%= t.label :completed %>
+  <%= t.submit %>
+<% end %></div>
